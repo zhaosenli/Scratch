@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Pixel Art Creator</h1>
+    <div id="app-container">
+        <div id="controls">
+            <div id="left-controls">
+                <div id="color-palette">
+                    <button class="preset-color" style="background-color: red;"></button>
+                    <button class="preset-color" style="background-color: orange;"></button>
+                    <button class="preset-color" style="background-color: yellow;"></button>
+                    <button class="preset-color" style="background-color: green;"></button>
+                    <button class="preset-color" style="background-color: blue;"></button>
+                    <button class="preset-color" style="background-color: purple;"></button>
+                    <button class="preset-color" style="background-color: black;"></button>
+                </div>
+                <input type="color" id="color-picker">
+                <button id="pen">Pen</button>
+                <button id="eraser">Eraser</button>
+                <button id="clear-all">Clear All</button>
+                <button id="undo">Undo</button>
+                <button id="redo">Redo</button>
+                <label for="grid-size">Grid Size:</label>
+                <select id="grid-size">
+                    <option value="64">64x64</option>
+                    <option value="128">128x128</option>
+                    <option value="256">256x256</option>
+                </select>
+            </div>
+            <div id="pixel-canvas"></div>
+        </div>
+    </div>
+    <audio id="explosion-sound" src="79356__milton__woop-woop-pool-up.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
